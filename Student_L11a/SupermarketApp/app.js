@@ -5,11 +5,18 @@ const flash = require('connect-flash');
 const app = express();
 const PORT = 3000;
 
+// const dh = mysql.createConnection({
+//     host: 'localhost',
+//     user: 'root',
+//     password: '',
+//     database: 'c237_l11b_supermarketapp'
+// });
+
 const dh = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'c237_l11b_supermarketapp'
+    host: 'mysql-xinrou.alwaysdata.net',
+    user: 'xinrou',
+    password: 'Basketball-55',
+    database: 'xinrou_supermarket'
 });
 
 const multer = require('multer');
